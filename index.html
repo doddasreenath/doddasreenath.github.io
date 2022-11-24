@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="style1.css">
+        <style>
+            .r{
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+            }
+            .vr-logo{
+                height:55px;
+                width:60px;
+                border-radius:20px;
+                }
+            .hs{
+                color: white;
+                background-color: #0c0504;
+            }
+            .p{
+                background-color: rgb(7, 52, 53);
+            }
+            .container{
+                background-color: rgb(61, 66, 66);
+                border-radius: 40px;
+            }
+            .button{
+                background-color: aqua;
+                height: 40px;
+                width: 100px;
+                border-radius: 40px;
+            }
+            .b{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body class="p">
+        <nav class="navbar navbar-expand-sm bg-black navbar-dark r">
+            <div class="container-fluid">
+              &emsp;&emsp;&emsp;<h1 class="high hs">Stopwatch</h1>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <li class="nav-item">
+                    <a><button class="button" href="#">Home</button></a>
+                  </li>
+                  &emsp;
+                  <li class="nav-item">
+                    <a href="about.html"><button class="button">About us</button></a>
+                  </li>
+                  &emsp;
+                  <li class="nav-item">
+                    <a href="contact.html"><button class="button">Contact Us</button></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="p">
+            <br>
+            <div class="container">
+                <div>
+                    <button class="btn" id="start">Start</button>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <span id="h" class="time">00</span>
+                    <span class="texts">:</span>
+                    <span id="minute" class="time">00</span>
+                    <span class="texts">:</span>
+                    <span id="second" class="time">00</span>
+                    <span class="texts">:</span>
+                    <span id="msecond" class="time">00</span>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <button class="btn" id="reset">Reset</button>
+                </div>
+                <br>
+                <br>
+                <div class="buttons">
+                    <button class="btn" id="stop">Stop</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <script src="stop.js"></script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.time {
+    font-size: 100px;
+    color: black;
+}
+.texts{
+    font-size: 100px;
+}
+
+.text {
+    font-size: 30px;
+    color: #040403;
+}
+.btn {
+    height: 80px;
+    font-size: 18px;
+    margin: 10px 16px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 90px;
+    font-weight: 500;
+}
+
+#start {
+    background-color: green;
+}
+
+#start:hover {
+    background-color: red;
+}
+
+#stop {
+    background-color: red;
+
+}
+
+#stop:hover {
+    background-color: cyan;
+}
+
+#reset {
+    background-color: grey;
+}
+
+#reset:hover {
+    background-color: red;
+}
+
+@media screen and (max-width : 500px) {
+    .time {
+        font-size: 60px;
+        color: #ffffff;
+    }
+
+    .text {
+        font-size: 20px;
+        color: #e4e2cf;
+    }
+
+    .btn {
+        font-size: 18px;
+        width: 75%;
+    }
+}
